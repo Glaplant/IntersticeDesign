@@ -1,0 +1,191 @@
+
+
+
+
+html,body{
+    width:100%;
+    height:100%;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+p, h1, li,h2, figcaption{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color:#52471b;
+    font-size:2em;
+    clear:both;
+    text-align:center;
+    padding-top:50px;
+    font-style:italic;
+    font-weight:bold;
+    
+}
+
+
+header{
+    background-color:#52471b;
+    text-align:center;
+    width:100%;
+    margin-top:-50px;
+
+}
+
+header div{
+    width:100%;
+    background-color:#f2cc10;
+    border-top:5px solid #87752d;
+    padding-top:25px;
+
+}
+
+header img{
+    width:270px;
+    position:relative;
+    top:80px;
+    margin-right:auto;
+    margin-left:auto;
+
+}
+
+h1{
+    position:relative;
+    top:25px;
+    text-align:center;
+    font-size:.8em;
+    color:#52471b;
+    display:block;
+
+
+}
+
+nav{
+    background-color:#87752d;
+    width:100%;
+    height:50px;
+    margin-top:-20px;
+    border-top: 5px solid #52471b;
+    border-bottom: 5px solid #52471b;
+
+   
+
+}
+nav ul{
+    width:100%;
+   text-align:center;
+   
+    
+   
+    
+}
+
+
+
+li{
+    display:inline;
+
+
+   
+  
+    
+    
+
+}
+
+li>a{
+    
+    color:#f8ffb0;
+    padding-right:60px;
+    text-decoration:none;
+    font-size:1em;
+    font-weight:bold;
+}
+
+nav li>a:link{
+    color:#f8ffb0;
+   
+}
+
+
+nav li>a:visited{
+    color:#f8ffb0;
+
+}
+
+nav li>a:hover{
+    color:#f2cc10;
+
+}
+
+nav li>a:active{
+    color:#fff;
+
+}
+
+div{
+    width:870px;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:50px;
+}
+main{
+    background-color:#f8ffb0;
+    margin:0px;
+    width:100%;
+    padding-bottom:100px;
+
+}
+
+#content{
+    width:100%;
+
+}
+
+figure{
+    float:left;
+    margin-left:30px;
+    margin-right:-20px;
+    margin-top:50px;
+   
+
+}
+
+figure img{
+    border: 5px solid #52471b;
+}
+
+
+figcaption{
+    text-align:center;
+    color:#fff;
+    background-color: #52471b;
+    padding:5px;
+    margin-top:-10px;
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+
+
+
+footer{
+
+    background-color:#52471b;
+    text-align: center;
+    width:100%;
+    color:#f2cc10;
+    padding:30px;
+
+    border-top: 5px solid #87752d;
+
+}
+
+footer p{
+    line-height:.1em;
+    font-size:.8em;
+    font-weight:bold;
+    
+}
