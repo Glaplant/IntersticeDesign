@@ -161,7 +161,11 @@ nav a:active{
 }
 
 
+#main_wrapper{
+    max-width:960px;
+    height:auto;
 
+}
 
 
 
