@@ -21,7 +21,8 @@ main{
 
 #logo{
     display:block;
-    width:960px;
+    max-width:960px;
+    height:auto;
     margin-left:auto;
     margin-right:auto;
     padding:2em 0;
