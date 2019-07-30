@@ -145,6 +145,24 @@ nav a:active{
     background-color:#b0afaf;
 }
 
+@media screen and (max-width:600px){
+    
+    nav button{
+    background-color:transparent;
+    border:none;
+    margin:.2em 2%;
+    font-size: 1.6rem;
+    color:#000;
+
+}
+
+
+
+
+nav ul.hide{
+    display:none;
+}
+}
 
 .contentBox{
     padding:1em;

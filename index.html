@@ -2,9 +2,14 @@
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="personal portfolio site">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/css.css">
+        <link rel="stylesheet" type="text/css" href="css/large.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito%7cRoboto:700,900" rel="stylesheet"> 
         <title>Iterstice Design Home Page</title>
+        <script src="scripts/hamburger.js"></script>
     </head>
     <body>
         <header>
@@ -15,12 +20,13 @@
             </picture>
         </header>
         <nav>
-            <ul id="flexcontainer">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
+            <button onclick="toggelMenu()">&#9776;</button>
+            <ul id="flexcontainer" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                <li class="active"><a href="blog.html">Blog</a></li>
             </ul>
 
         </nav>
