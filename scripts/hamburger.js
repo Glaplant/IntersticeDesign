@@ -1,4 +1,4 @@
 function toggelMenu(){
-
-    document.getElementById("flexcontainer").classList.toggel("hide");
+let open = document.getElementByClass("flexcontainer");
+open.classList.toggel("open");
 }
