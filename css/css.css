@@ -1,3 +1,10 @@
+
+
+
+/*--General--*/
+
+
+
 html, body{
     width:100%;
     height:100%;
@@ -11,20 +18,59 @@ html, body{
 
 
 
-
+/*----header--------*/
 
 .logo{
- margin:2em;
+    margin:3em;
+   }
+
+/*---typography---*/
+
+.large_text{
 
 
 }
+
+.large_text a{
+    margin:7em;
+    padding:0;
+    font-family:"Roboto", sans-serif;
+    font-size:2em;
+    font-weight:900;
+    color:#fff;
+   text-decoration:none;
+}
+
+
+h2{
+    font-family:'Roboto',sans-serif;
+   font-size: 2em;
+}
+
+
+p{
+    font-family:'nunito',sans-serif;
+}
+
+nav{
+    font-family:'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+
+}
+
+
+
+/*---spacing--*/
+
+
+
 
 
 .hero{
     display:flex;
     justify-content:center;
-    align-items:center;
-    text-align:center;
+    
     width:100vw;
     height:100vh;
     background-position:center center;
@@ -78,21 +124,10 @@ html, body{
 
 }
 
-h2{
-    font-family:'Roboto',sans-serif;
-   font-size: 2em;
-}
 
-nav{
-    font-family:'Roboto', sans-serif;
-    margin:0;
-    padding:0;
 
-}
 
-p{
-    font-family:'nunito',sans-serif;
-}
+
 /*---nav----*/
 
 .flexcontainer{
@@ -103,6 +138,20 @@ p{
 
 
 }
+
+nav{
+    border-top:solid 2px #000;
+    border-bottom:solid 2px #000;
+}
+
+
+nav ul{
+
+    padding:0;
+    margin:0;
+}
+
+
 nav ul li{
     display:inline-block;
     list-style-type:none;
@@ -123,19 +172,6 @@ nav ul li a {
    
 }
 
-nav{
-    border-top:solid 2px #000;
-    border-bottom:solid 2px #000;
-}
-
-
-nav ul{
-
-    padding:0;
-    margin:0;
-}
-
-
 
 nav a:hover{
     color:#000;
@@ -150,29 +186,10 @@ nav a:active{
     background-color:#b0afaf;
 }
 
-@media screen and (max-width:600px){
-    
-    nav button{
-    background-color:transparent;
-    border:none;
-    margin:.2em 2%;
-    font-size: 1.6rem;
-    color:#000;
-
-}
 
 
 
-
-.hide{
-    display:none;
-}
-
-.open{
-    display:initial;
-
-}
-}
+/*------*/
 
 .contentBox{
     padding:1em;
@@ -188,12 +205,6 @@ nav a:active{
     padding:.5em; 
 }
 
-
-.main_wrapper{
-    max-width:960px;
-    height:auto;
-
-}
 
 
 
@@ -268,6 +279,24 @@ video{
 
 }
 
+
+#gridparent img{
+    width:300px;
+    height:200px;
+
+}
+
+#gridparent{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: auto;
+    grid-gap:20px;
+    margin-top:3em;
+    justify-items: center;
+    
+
+}
+
 /*footer*/
 #design{
     margin-bottom:-.2em;
@@ -334,10 +363,56 @@ fieldset{
     padding:1rem;
     box-shadow:  0 0 .5em ;
     
-    
-   
+}
+
+#button{
+    font-size:1rem;
+    margin-top:1em;
+    background-color:green;
+    font-weight:bold;
+    color:white;
+    border-radius:2px;
+    padding:.75em;
+    width:8em;
     
 
+}
+
+
+/*querries*/
+
+@media screen and (min-width:320px){
+
+.hero{
+    
+    text-align:center;
+}
+
+    
+/*Nav Button and menu*/
+
+nav button{
+    background-color:transparent;
+    border:none;
+    margin:.2em 2%;
+    font-size: 1.6rem;
+    color:#000;
+
+}
+
+.hide{
+    display:none;
+}
+
+.open{
+    display:initial;
+
+}
+
+large_text{
+
+
+}
 
 
 }
@@ -354,83 +429,30 @@ fieldset{
 }
     
    
-    
+.hero{
+    align-items:center;
+    text-align:center;
+}
+.large_text a{
+    margin:7em;
+    padding:0;
+    font-family:"Roboto", sans-serif;
+    font-size:9em;
+    font-weight:900;
+    color:#fff;
+   text-decoration:none;
+}
 
 
 
 }
 
 
-legend{
-    font-family:'Roboto', serif;
-    font-weight:bold;
-    font-size:1.5rem;
-
-}
 
 
-label{
-    font-family:'Roboto', serif;
-    display:block;
-    margin-top:1rem;
 
 
-}
 
-
-input{
-    font-family:'Nunito', serif;
-    display:block;
-    border:solid 1px #000;
-    background-color:rgba(0,0,0,0.3);
-    padding:.75rem;
-    border-radius:10px;
-   
-   
-   
-
-
-}
-
-
-textarea{
-    width:100%;
-    height:300px;
-   
-   
-}
-  
-
-
-#button{
-    font-size:1rem;
-    margin-top:1em;
-    background-color:green;
-    font-weight:bold;
-    color:white;
-    border-radius:2px;
-    padding:.75em;
-    width:8em;
-    
-
-}
-
-#gridparent img{
-    width:300px;
-    height:200px;
-
-}
-
-#gridparent{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: auto;
-    grid-gap:20px;
-    margin-top:3em;
-    justify-items: center;
-    
-
-}
 
 
 
