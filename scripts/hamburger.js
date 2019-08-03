@@ -1,4 +1,4 @@
 function toggelMenu(){
-let open = document.getElementByClass("flexcontainer");
-open.classList.toggel("open");
+ document.getElementById("nav_button").classList.toggle("hide");
+
 }
