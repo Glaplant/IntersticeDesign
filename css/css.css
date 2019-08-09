@@ -39,6 +39,11 @@ html, body{
 }
 
 
+.bold{
+    font-weight:700;
+}
+
+
 h2{
     font-family:'Roboto',sans-serif;
    font-size: 2em;
@@ -120,7 +125,11 @@ nav{
 
 }
 
-
+.icon{
+margin:2em;
+width:3rem;
+max-width:100%;
+}
 
 
 
@@ -190,7 +199,10 @@ nav a:active{
 .contentBox{
     padding:1em;
     box-shadow:  0 0 .5em ;
-    margin:3em 0;
+    margin:auto;
+    margin-top:3em;
+    margin-bottom:3em;
+    
     border-radius:20px;
     max-width:90%;
 
@@ -465,7 +477,7 @@ fieldset{
 nav ul.flexcontainer{
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap:wrap;
     padding:0;
    
@@ -483,7 +495,27 @@ nav ul.flexcontainer{
 }
 
 .active{
-    margin:auto;
+    padding: 1em;
+    padding-top: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+}
+
+nav a:hover{
+    color:#000;
+    font-weight:bold ;
+    background: transparent;
+   
+   
+    
+
+}
+nav a:active{
+    color:#000;
+    font-weight:bold ;
+    background: transparent;
+    
 }
 
 
