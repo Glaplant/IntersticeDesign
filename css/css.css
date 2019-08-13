@@ -168,7 +168,7 @@ nav{
     background-color:white;
     margin:0;
     padding:.5em;
-    margin-right:3em;
+    margin-right:4em;
     border-bottom: 2px solid #000;
     border-left:2px solid #000;
     border-right:2px solid #000;
@@ -246,7 +246,7 @@ nav ul li a {
     padding:1em;
     box-shadow:  0 0 .5em ;
     margin:auto;
-    margin-top:3em;
+    margin-top:5em;
     margin-bottom:3em;
     
     border-radius:20px;
@@ -559,7 +559,20 @@ nav ul.flexcontainer{
 
 }
 
+ nav ul .active a:after{
+    display: block;
+    content: "";
+    position: relative;
+     width: 0px;
+     height: 3px;
+     background-color:#9e463c;
+     transition: width 0.2s, left 0.2s;
+ }
 
+ nav ul .active a:hover::after, nav ul .active  a:focus::after {
+    width: 115%;
+    left: 0;
+  }
 
 .flexcontainer_flexend{
     display:flex;
