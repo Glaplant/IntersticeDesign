@@ -316,26 +316,7 @@ video{
     background-color:#000;
 }
 
-.titles{
 
-    font-family:Nunito;
-    font-size:2em;
-    font-weight:200;
-
-}
-  
-
-.shadow :hover{
-    box-shadow: 0 0  50px #000;
-
-}
-
-
-
-.shadow :active{
-    box-shadow: 0 0 50px #000;
-
-}
 
 
 #gridparent img{
@@ -464,6 +445,47 @@ nav ul.hide{
 .flex_column{
     display:flex;
     flex-direction:column;
+    
+    }
+
+
+
+    .card{
+        border: solid 3px  #000;
+       text-align:center;
+    
+    }
+    
+    .titles{
+    
+        font-family: 'Diplomata SC', cursive;
+        color:#fff;
+        margin:0;
+        padding:0;
+        font-size:2em;
+    
+    }
+      
+    /*Cards*/
+    .card.shadow:hover{
+        box-shadow: 5px 5px  #646363;
+    
+    }
+    
+    
+    
+    .shadow :active{
+        box-shadow: 0 0 2px #9e463c;
+    
+    }
+    
+    .card_bg{
+        background-color:#b0afaf;
+    }
+    
+    .card_bg:hover{
+        background-color:#9e463c;
+      
     
     }
 
@@ -622,6 +644,50 @@ nav button{
     
 
 }
+
+/*Cards*/
+.card{
+    border: solid 3px  #000;
+   text-align:center;
+
+}
+
+.titles{
+
+    font-family: 'Diplomata SC', cursive;
+    color:#fff;
+    margin:0;
+    padding:0;
+    font-size:2em;
+
+}
+  
+
+.card.shadow:hover{
+    box-shadow: 5px 5px  #646363;
+
+}
+
+
+
+.shadow :active{
+    box-shadow: 0 0 2px #9e463c;
+
+}
+
+.card_bg{
+    background-color:#b0afaf;
+}
+
+.card_bg:hover{
+    background-color:#9e463c;
+  
+
+}
+
+
+
+
 
 }
 
