@@ -28,6 +28,10 @@ li a{
 
 }
 
+img{
+    width:100%;
+}
+
 
 .style_inline{
     display:inline-block;
@@ -52,11 +56,24 @@ li a{
 }
 
 
+
+
+
 /*----header--------*/
 
 .logo{
     margin:1.5em;
    }
+
+   
+.flexcontainer_center{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:wrap;
+    padding:0;
+
+}
 
 /*---typography---*/
 
@@ -115,9 +132,6 @@ nav{
     
 }
 
-.large_text a:hover{
-    color:grey;
-}
 
 /*h1{
     
@@ -229,14 +243,13 @@ nav ul li a {
 
 
 
-}
+
 
 
 .large_text a:hover{
     color: #9e463c;
 
 }
-
 
 
 
@@ -283,22 +296,13 @@ nav ul li a {
 
 }
 
-.grid2{
 
-    display:grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto;
-    grid-gap:1px;
-    justify-items: center;
-   
-    
-    
-
-}
 
 #intro{
-    margin-top:175px;;
+    margin-top:175px;
 }
+
+
 #icons{
     margin-top:175px;
 
@@ -314,16 +318,12 @@ nav ul li a {
 
 video{
     background-color:#000;
+    width:100%;
 }
 
 
 
 
-#gridparent img{
-    width:300px;
-    height:200px;
-
-}
 
 
 
@@ -413,7 +413,7 @@ fieldset{
 
 /*-------------------mobile-------*/
 
-@media (min-width:320px){
+@media (min-width:5rem){
 
 .hero{
     
@@ -440,7 +440,24 @@ nav ul.hide{
     display:none;
 }
 
+.card{
+    border: solid 3px #000;
+    text-align: center;
+    flex: 1;
+    max-width: 90%;
+    margin-bottom: 3rem;
+}
 
+@media (max-width:40rem){
+.active:hover{
+    background-color:#9e463c;
+    
+}
+
+.active a:hover{
+color:white;
+}
+}
 
 .flex_column{
     display:flex;
@@ -450,11 +467,7 @@ nav ul.hide{
 
 
 
-    .card{
-        border: solid 3px  #000;
-       text-align:center;
-    
-    }
+ 
     
     .titles{
     
@@ -465,6 +478,24 @@ nav ul.hide{
         font-size:2em;
     
     }
+
+
+/*-icons--*/
+
+    .icons{
+        display: flex;
+        flex-direction: column;
+        padding:.5em;
+        margin:0;
+        justify-content:center;
+        align-items: center;
+    
+     
+    
+    
+    }
+    
+
       
     /*Cards*/
     .card.shadow:hover{
@@ -492,12 +523,12 @@ nav ul.hide{
    /* Portfolio Grid*/
 
     .gridparent{
-        display:grid;
-        grid-template-columns: 1frr; 
-        grid-gap:20px;
+        display:flex;
+        flex-direction:column; 
         margin:auto;
         margin-top:3em;
-        justify-items: center;
+        justify-content: space-around;
+        align-items:center;
         
     
     }
@@ -507,11 +538,44 @@ nav ul.hide{
 
 }
 
+/*---- Middle Size Screen----*/
+
+@media (min-width:40rem){
+
+
+
+   /* Portfolio Grid*/
+
+   .gridparent{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    margin:auto;
+    margin-top:3em;
+    justify-content: space-around;
+    align-items:center;
+
+}
+
+
+
+.icons{
+    display: flex;
+    padding:.5em;
+    margin-right:4em;
+    flex-direction:row;
+   
+ 
+
+
+}
+}
+
 
 /*---desktop------*/
 
 
-@media (min-width:601px){
+@media (min-width:48rem){
 
 fieldset{
     margin-top:3rem;
@@ -561,7 +625,9 @@ nav ul.flexcontainer{
    
 
 
-}nav.flexcontainer{
+}
+
+nav.flexcontainer{
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
@@ -581,7 +647,11 @@ nav ul.flexcontainer{
 
 }
 
- nav ul .active a:after{
+.active a:hover{
+    color:#9e463c;
+}
+
+ .active a:after{
     display: block;
     content: "";
     position: relative;
@@ -591,10 +661,13 @@ nav ul.flexcontainer{
      transition: width 0.2s, left 0.2s;
  }
 
- nav ul .active a:hover::after, nav ul .active  a:focus::after {
+ .active a:hover::after, .active  a:focus::after {
     width: 115%;
     left: 0;
   }
+
+
+
 
 .flexcontainer_flexend{
     display:flex;
@@ -611,21 +684,7 @@ nav ul.flexcontainer{
     padding-left: 2em;
 }
 
-nav ul a:hover{
-    color:#9e463c;
-    font-weight:bold ;
-    background: transparent;
-   
-   
-    
 
-}
-nav ul a:active{
-    color:#9e463c;
-    font-weight:bold ;
-    background: transparent;
-    
-}
 
 
 
@@ -634,14 +693,24 @@ nav button{
 }
 
 .gridparent{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: auto;
-    grid-gap:20px;
+    display:flex;
+    flex-direction:row;
     margin-top:8em;
     margin-bottom:20em;
-    justify-items: center;
+    justify-content: space-around;
+    align-items:center;
     
+
+}
+
+
+.icons{
+    display: flex;
+    padding:.5em;
+    margin-right:4em;
+    flex-direction:row;
+ 
+
 
 }
 
